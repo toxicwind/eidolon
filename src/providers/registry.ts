@@ -8,6 +8,7 @@ import { ModelsLabProvider } from "./modelslab";
 import { GeminiProvider } from "./gemini";
 import { GrokProvider } from "./grok";
 import { OpenAIProvider } from "./openai";
+import { NvidiaProvider } from "./nvidia";
 import { hasAvailableToken } from "../api/token-manager";
 
 /**
@@ -114,6 +115,8 @@ providerRegistry.register(new ModelsLabProvider());
 providerRegistry.register(new GeminiProvider());
 providerRegistry.register(new GrokProvider());
 providerRegistry.register(new OpenAIProvider());
+providerRegistry.register(new NvidiaProvider());
+providerRegistry.register(new NvidiaProvider());
 
 /**
  * 获取所有可用模型列表（不过滤）

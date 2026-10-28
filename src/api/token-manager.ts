@@ -16,10 +16,12 @@ export type Provider =
   | "gemini"
   | "grok"
   | "openai"
-  | "modelslab";
+  | "modelslab"
+  | "nvidia";
 
 // 运行时校验用的有效 Provider 列表
 const VALID_PROVIDERS: readonly string[] = [
+  "nvidia",
   "huggingface",
   "gitee",
   "modelscope",
